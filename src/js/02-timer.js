@@ -36,7 +36,7 @@ refs.buttonEl.addEventListener('click', start);
 console.log(userSelectedDate);
 function start() {
   refs.buttonEl.disabled = true;
-  intervalId = setInterval(() => {
+  const intervalId = setInterval(() => {
     const datePassed = userSelectedDate - new Date()
     console.log(datePassed)
     const time = convertMs(datePassed);
